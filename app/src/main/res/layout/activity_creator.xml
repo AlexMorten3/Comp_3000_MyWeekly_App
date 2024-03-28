@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatorActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day1"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Monday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/monAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day1"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day2"
+        android:layout_below="@+id/monAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Tuesday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tueAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day2"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day3"
+        android:layout_below="@+id/tueAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Wednesday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/wedAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day3"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day4"
+        android:layout_below="@+id/wedAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Thursday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/thuAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day4"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day5"
+        android:layout_below="@+id/thuAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Friday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/friAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day5"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day6"
+        android:layout_below="@+id/friAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Saturday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/satAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day6"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day7"
+        android:layout_below="@+id/satAddEvent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Sunday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sunAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day7"
+        android:backgroundTint="#ad5f00"
+        android:text="Add Activity" />
+
+</RelativeLayout>

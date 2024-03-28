@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyWeeklyFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day1"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Monday"/>
+
+    <LinearLayout
+        android:id="@+id/monView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day1"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day2"
+        android:layout_below="@+id/monView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Tuesday"/>
+
+    <LinearLayout
+        android:id="@+id/tueView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day2"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day3"
+        android:layout_below="@+id/tueView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Wednesday"/>
+
+    <LinearLayout
+        android:id="@+id/wedView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day3"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day4"
+        android:layout_below="@+id/wedView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Thursday"/>
+
+    <LinearLayout
+        android:id="@+id/thuView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day4"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day5"
+        android:layout_below="@+id/thuView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Friday"/>
+
+    <LinearLayout
+        android:id="@+id/friView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day5"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day6"
+        android:layout_below="@+id/friView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Saturday"/>
+
+    <LinearLayout
+        android:id="@+id/satView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day6"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day7"
+        android:layout_below="@+id/satView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Sunday"/>
+
+    <LinearLayout
+        android:id="@+id/sunView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="60dp"
+        android:background="#242424"
+        android:layout_below="@+id/day7"
+        android:orientation="horizontal" />
+
+
+
+
+</RelativeLayout>
