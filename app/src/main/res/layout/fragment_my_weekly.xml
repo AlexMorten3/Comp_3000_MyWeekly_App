@@ -3,134 +3,331 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MyWeeklyFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day1"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Monday"/>
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/monView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day1"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day2"
-        android:layout_below="@+id/monView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Tuesday"/>
-
-    <LinearLayout
-        android:id="@+id/tueView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day2"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day3"
-        android:layout_below="@+id/tueView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Wednesday"/>
-
-    <LinearLayout
-        android:id="@+id/wedView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day3"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day4"
-        android:layout_below="@+id/wedView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Thursday"/>
-
-    <LinearLayout
-        android:id="@+id/thuView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day4"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day5"
-        android:layout_below="@+id/thuView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Friday"/>
-
-    <LinearLayout
-        android:id="@+id/friView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day5"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day6"
-        android:layout_below="@+id/friView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Saturday"/>
-
-    <LinearLayout
-        android:id="@+id/satView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day6"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/day7"
-        android:layout_below="@+id/satView"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:text="Sunday"/>
-
-    <LinearLayout
-        android:id="@+id/sunView"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="60dp"
-        android:background="#242424"
-        android:layout_below="@+id/day7"
-        android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
+            <!--Monday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day1"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Monday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/monView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editMon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFAE00"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Test&#10;10AM - 1PM"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Tuesday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day2"
+                android:layout_below="@+id/monView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Tuesday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/tueView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editTue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFAE00"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Gym&#10;11:30AM - 1PM"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFAE00"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Assignment Work&#10;2PM - 4PM"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFAE00"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Cinema&#10;5PM - 7:30PM"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFAE00"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Activity4"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Wednesday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day3"
+                android:layout_below="@+id/wedView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Wednesday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/wedView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editWed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Thursday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day4"
+                android:layout_below="@+id/wedView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Thursday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/thuView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editThu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Friday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day5"
+                android:layout_below="@+id/thuView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Friday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/friView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editFri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Saturday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day6"
+                android:layout_below="@+id/friView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Saturday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/satView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editSat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <!--Sunday-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day7"
+                android:layout_below="@+id/satView"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#913300"
+                android:text="Sunday"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="#5c5a59">
+
+                <LinearLayout
+                    android:id="@+id/sunView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5c5a59"
+                    android:layout_below="@+id/day2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editSun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Edit"
+                        android:backgroundTint="#D65915"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

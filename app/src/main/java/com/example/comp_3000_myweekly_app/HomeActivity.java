@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-            CreateWeeklyFragment firstFragment = new CreateWeeklyFragment();
+            MyWeeklyFragment firstFragment = new MyWeeklyFragment();
 
             firstFragment.setArguments(getIntent().getExtras());
             getSupportFragmentManager().beginTransaction().add(R.id.weeklyFragment, firstFragment).commit();
